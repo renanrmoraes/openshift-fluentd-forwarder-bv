@@ -1,0 +1,25 @@
+[rhel-7-server-rpms]
+metadata_expire = 86400
+sslclientcert = /etc/pki/entitlement/7594250792661498561.pem
+baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/os
+ui_repoid_vars = releasever basearch
+sslverify = 1
+name = Red Hat Enterprise Linux 7 Server (RPMs)
+sslclientkey = /etc/pki/entitlement/7594250792661498561-key.pem
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+gpgcheck = 1
+
+[rhel-7-server-optional-rpms]
+metadata_expire = 86400
+sslclientcert = /etc/pki/entitlement/7594250792661498561.pem
+baseurl = https://cdn.redhat.com/content/dist/rhel/server/7/$releasever/$basearch/optional/os
+ui_repoid_vars = releasever basearch
+sslverify = 1
+name = Red Hat Enterprise Linux 7 Server - Optional (RPMs)
+sslclientkey = /etc/pki/entitlement/7594250792661498561-key.pem
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+enabled = 1
+sslcacert = /etc/rhsm/ca/redhat-uep.pem
+gpgcheck = 1
