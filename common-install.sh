@@ -4,6 +4,8 @@
 RELEASE=$(cat /etc/redhat-release)
 YUM_ARGS="--setopt=tsflags=nodocs"
 
+sleep 600
+
 # ensure latest versions
 yum update $YUM_ARGS -y
 
