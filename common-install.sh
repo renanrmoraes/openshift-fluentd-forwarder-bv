@@ -15,7 +15,7 @@ yum update $YUM_ARGS -y
 # - iproute needed for ip command to get ip addresses	+ADD run.sh fluentd.conf.template passwd.template fluentd-check.sh ${HOME}/
 # - nss_wrapper used to support username identity	+ADD common-*.sh /tmp/
 # - bc for calculations in run.conf
-PACKAGES="gcc-c++ libcurl-devel make bc gettext hostname iproute"
+PACKAGES="gcc-c++ libcurl-devel make bc gettext wget hostname iproute"
 
 # ruby packages
 PACKAGES="${PACKAGES} ruby rubygems ruby-devel"
