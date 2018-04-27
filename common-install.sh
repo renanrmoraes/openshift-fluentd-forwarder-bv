@@ -1,5 +1,6 @@
 #!/bin/bash
 
+yum repolist
 echo "Sleep 120 seconds"
 sleep 120
 
