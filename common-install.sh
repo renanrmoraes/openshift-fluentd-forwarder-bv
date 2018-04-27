@@ -1,8 +1,7 @@
 #!/bin/bash
 
+mv redhat.repo /etc/yum.repos.d/redhat.repo
 yum repolist
-echo "Sleep 120 seconds"
-sleep 120
 
 # get release version
 RELEASE=$(cat /etc/redhat-release)
