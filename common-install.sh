@@ -1,10 +1,13 @@
 #!/bin/bash
 
+echo "Sleep 120 seconds"
+sleep 120
+
 # get release version
 RELEASE=$(cat /etc/redhat-release)
 YUM_ARGS="--setopt=tsflags=nodocs"
 
-sleep 600
+
 
 # ensure latest versions
 yum update $YUM_ARGS -y
