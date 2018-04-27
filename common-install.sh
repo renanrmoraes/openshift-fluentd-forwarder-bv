@@ -1,7 +1,5 @@
 #!/bin/bash
 
-mv redhat.repo /etc/yum.repos.d/redhat.repo
-yum repolist
 
 # get release version
 RELEASE=$(cat /etc/redhat-release)
