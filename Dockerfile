@@ -32,7 +32,6 @@ LABEL io.k8s.description="Fluentd container for collecting logs from other fluen
 # add files
 ADD run.sh fluentd.conf.template passwd.template fluentd-check.sh ${HOME}/
 ADD common-*.sh /tmp/
-ADD redhat.repo /etc/yum.repos.d/
 
 # set permissions on files
 RUN chmod g+rx ${HOME}/fluentd-check.sh && \
