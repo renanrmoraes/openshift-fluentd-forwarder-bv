@@ -56,7 +56,7 @@ objects:
 parameters:
   - name: GIT_URI
     description: The Git URI.
-    value: "https://github.com/renanrmoraes/openshift-fluentd-forwarder.git"
+    value: "https://github.com/renanrmoraes/openshift-fluentd-forwarder-bv.git"
     required: true
   - name: GIT_REF
     description: The git reference (tag, branch or other reference) to build from.
